@@ -109,9 +109,7 @@ h1{
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;  
 }
-h2.blue{
-    font-size: 30px;
-}
+
 .area .blue{
     font-weight: bold;
     font-size: 20px;
@@ -150,4 +148,6 @@ input[type= 'submit']{
     margin-top:-37px;
     margin-left: 120px;
 }
+
+
 
