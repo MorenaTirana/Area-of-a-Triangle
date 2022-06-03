@@ -24,45 +24,6 @@
     padding: 0px 5px;
 }
 
-.triangle{
-    margin-left: 20px;
-    margin-top: 30px;
-    height: 0px;
-    width: 0px;
-    border: 70px solid transparent;
-    border-color: transparent purple blue transparent;
-    transition: all 1s;
-}
-
-#purple1{
-    position: relative;
-    font-size: 10px;
-    width: 150px;
-    margin: -53% 13%;
-    background-color: #33cc33;
-}
-.purple1 p{
-    margin-top: -50%;
-    z-index: 9;
-}
-
-#diagonal{
-    width:140px;
-    height: 140px;
-    background: linear-gradient(135deg, transparent, transparent 49%, green 49%, white 51%, transparent 11%, transparent);
-    z-index: 5;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    pointer-events: none;
-}
-#diagonal p{
-    margin: 50px 60px;
-    color: green;
-    font-weight: bold;
-}
-.square:hover{
-    border-color: green;
-}
 #formula {
 	position: absolute;
 	top: 25px;
@@ -86,7 +47,7 @@
 	content: '\00221a'; /* unicode for &radic; */
 	position: relative;
 	top: 1px;
-}
+} 
 h3{
     margin-left: 150px;
 }
@@ -147,7 +108,56 @@ input[type= 'submit']{
     font-weight: bold;
     margin-top:-37px;
     margin-left: 120px;
+} 
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #container {
+    font-family: Ubuntu;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #container > div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 20px;
+  }
+  
+  #container > div > span {
+    width: 10px;
+    color: blue;
+  }
+  
+  #container > div > input {
+    margin-left: 20px;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-
-
+ 
+  #container button {
+    margin-left: 30px;
+    width: 60px;
+    background-color: #000;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  
+  svg {
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0 0 20px;
+    background-color: #1b87ec;
+  }

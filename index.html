@@ -7,15 +7,30 @@
     <title> Area of a Triangle</title>
 
     <link rel="stylesheet" a href="style.css">
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
 
 </head>
 <body>
-   <div class="triangle">
-       <div id="side-a"></div> 
-       <div id="side-b"></div> 
-       <div id="side-c"></div> 
-   </div>
+   
+    <div id='wrapper'>
+        <div id='container'>
+          <div>
+            <span>A: </span><input type="number" id="side-a" value=" "/>
+          </div>
+          <div>
+            <span>B: </span><input type="number" id="side-b" value=" "/>
+          </div>
+          <div>
+            <span>C: </span><input type="number" id="side-c" value=" "/>
+          </div> 
+          <div>
+            <button>DRAW</button>
+          </div>
+        </div>
+        <svg width="110" height="110">
+          <polygon transform="translate(10,10)" />
+        </svg>
+      </div>
 
 
     <div id="formula">
@@ -52,6 +67,7 @@
                 );    
          </h2>
     </div>
+  
     <section class="area">
             <h2><span class="green" style="font-size:30px;">Area</span> of a <span class="blue" style="font-size:30px;">Triangle</span></h2>
             <p>Enter length of <span class="blue">a</span> : <input type = 'text' id = 'a'></p>
@@ -60,10 +76,10 @@
             <input type = 'submit' value = 'Calculate' onclick = 'calculate()'>
             <p style="padding-left:20px; font-weight:bold;">The <span class="green"> Area </span> is:</p>
             <p id = 'ans'></p> 
-    </section>
+    </section> 
 
- 
     <script src="index.js"></script>
+
 
 </body>
 </html>
