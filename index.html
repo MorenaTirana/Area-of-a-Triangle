@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Area of a Triangle</title>
+
+    <link rel="stylesheet" a href="style.css">
+  
+
+</head>
+<body>
+   <div class="triangle">
+       <div id="side-a"></div> 
+       <div id="side-b"></div> 
+       <div id="side-c"></div> 
+   </div>
+
+
+    <div id="formula">
+    
+        <h3>
+            According to <span class="red"> Heron's Formula</span>
+        </h3>
+        <p> first calculate the value of <span class="green">s</span>
+            which represents half of the triangle's perimeter
+        </p>
+        <div class="first-step">
+            <div class="s">
+                <span class="purple">s</span>
+            </div> = 
+            <span class="Fraction">
+                <span class="Numerator">
+                    <span class="blue"> a </span> + 
+                    <span class="blue"> b </span> +
+                    <span class="blue"> c </span> 
+                </span>
+                <span class="Denominator"> 2</span>
+            </span>
+        </div>
+        <br>
+
+        <p> Now calculate the <span class="green"> Triangle's Area </span> as follows:</p>
+
+         <h2><span class="green">Area</span> = 
+                Math.sqrt(<span class="purple">s</span> * 
+                    ((<span class="purple">s</span> - <span class="blue">a</span>) * 
+                     (<span class="purple">s</span> - <span class="blue">b</span>) *
+                     (<span class="purple">s</span> - <span class="blue">c</span>)
+                    )
+                );    
+         </h2>
+    </div>
+    <section class="area">
+            <h2><span class="green" style="font-size:30px;">Area</span> of a <span class="blue" style="font-size:30px;">Triangle</span></h2>
+            <p>Enter length of <span class="blue">a</span> : <input type = 'text' id = 'a'></p>
+            <p>Enter length of <span class="blue">b</span> : <input type = 'text' id = 'b'></p>
+            <p> Enter length of <span class="blue">c</span> : <input type = 'text' id = 'c'></p>
+            <input type = 'submit' value = 'Calculate' onclick = 'calculate()'>
+            <p style="padding-left:20px; font-weight:bold;">The <span class="green"> Area </span> is:</p>
+            <p id = 'ans'></p> 
+    </section>
+
+ 
+    <script src="index.js"></script>
+
+</body>
+</html>

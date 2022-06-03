@@ -1,0 +1,153 @@
+.first-step{
+    display: flex;
+    font-size: 20px;
+    
+}
+.s{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 170px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.Fraction{
+    display: table-cell;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.Denominator{
+    border-top: 1px solid #000;
+    display: block;
+}
+.Fraction, .Numerator, .Denominator{
+    padding: 0px 5px;
+}
+
+.triangle{
+    margin-left: 20px;
+    margin-top: 30px;
+    height: 0px;
+    width: 0px;
+    border: 70px solid transparent;
+    border-color: transparent purple blue transparent;
+    transition: all 1s;
+}
+
+#purple1{
+    position: relative;
+    font-size: 10px;
+    width: 150px;
+    margin: -53% 13%;
+    background-color: #33cc33;
+}
+.purple1 p{
+    margin-top: -50%;
+    z-index: 9;
+}
+
+#diagonal{
+    width:140px;
+    height: 140px;
+    background: linear-gradient(135deg, transparent, transparent 49%, green 49%, white 51%, transparent 11%, transparent);
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    pointer-events: none;
+}
+#diagonal p{
+    margin: 50px 60px;
+    color: green;
+    font-weight: bold;
+}
+.square:hover{
+    border-color: green;
+}
+#formula {
+	position: absolute;
+	top: 25px;
+    width: 500px;
+	left: 300px;
+	white-space: nowrap;
+	line-height: 1em;
+	font-size: 80%;
+    background-color: pink;
+}
+
+.green { color: #33cc33; }
+.blue  { color: #3333dd; }
+.red   { color: #ff0000; }
+.purple { color: #800080; }
+
+.radix > span {
+	text-decoration:overline;
+}
+.radix:before {
+	content: '\00221a'; /* unicode for &radic; */
+	position: relative;
+	top: 1px;
+}
+h3{
+    margin-left: 150px;
+}
+#formula h2{
+    margin-left: 50px;
+}
+#formula p{
+    margin-left: 10%;
+}
+h1{
+    margin-left: 170px;
+}
+.area{
+    width: 800px;
+    height: 300px;
+    padding: 0 70px;
+    margin-left: 350px;
+    margin-top: 90px;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;  
+}
+h2.blue{
+    font-size: 30px;
+}
+.area .blue{
+    font-weight: bold;
+    font-size: 20px;
+}
+.area h2{
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+input[type= 'text']{
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: #1b87ec;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}
+input[type= 'submit']{
+    background-color: red;
+    color: #fff;
+    margin-top:12px;
+    margin-left: 10%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 5px 5px red;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#ans{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:-37px;
+    margin-left: 120px;
+}
+
