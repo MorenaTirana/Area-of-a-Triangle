@@ -25,13 +25,13 @@
 }
 
 #formula {
-	position: absolute;
-	top: 25px;
+    position: absolute;
+    top: 25px;
     width: 500px;
-	left: 300px;
-	white-space: nowrap;
-	line-height: 1em;
-	font-size: 80%;
+    left: 300px;
+    white-space: nowrap;
+    line-height: 1em;
+    font-size: 80%;
     background-color: pink;
 }
 
@@ -41,12 +41,12 @@
 .purple { color: #800080; }
 
 .radix > span {
-	text-decoration:overline;
+    text-decoration:overline;
 }
 .radix:before {
-	content: '\00221a'; /* unicode for &radic; */
-	position: relative;
-	top: 1px;
+    content: '\00221a'; /* unicode for &radic; */
+    position: relative;
+    top: 1px;
 } 
 h3{
     margin-left: 150px;
@@ -60,9 +60,9 @@ h3{
 h1{
     margin-left: 170px;
 }
-.area{
+.calculate-area{
     width: 800px;
-    height: 300px;
+    height: 400px;
     padding: 0 70px;
     margin-left: 350px;
     margin-top: 90px;
@@ -71,11 +71,11 @@ h1{
     gap: 70px;  
 }
 
-.area .blue{
+.calculate-area .blue{
     font-weight: bold;
     font-size: 20px;
 }
-.area h2{
+.calculate-area h2{
     padding-bottom: 20px;
     padding-left: 15px;
 }
@@ -139,7 +139,7 @@ input[type= 'submit']{
     border-radius: 10px;
     text-align: center;
   }
-input::-webkit-outer-spin-button,
+  input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -161,3 +161,4 @@ input::-webkit-inner-spin-button {
     margin: 10px 0 0 20px;
     background-color: #1b87ec;
   }
+
