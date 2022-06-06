@@ -9,11 +9,7 @@ function Area() {
 
   document.getElementById("ans").innerHTML = area;
 }
-/*
 
- 
-  document.getElementById('ans').innerHTML = res;
-} */
 const calculateTriangle = (a, b, c) => {
   const ax = 0;
   const ay = 0;
